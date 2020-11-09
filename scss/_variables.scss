@@ -1,17 +1,15 @@
-$white: #fff;
 $yellow: #fdc66a;
-$yellowHover: lighten(#fdc66a, 20%);
-$yellowHover2: darken(#fdc66a, 10%);
-$grey: #666666;
-$bgc: #0c0c0c;
-$grey2: #333333;
-$bgc2: #111111;
-$titleAfter: #181818;
-// $cardBg: #1f222c;
+$mainDark: #0c0c0c;
+$transBlack: rgba(0,0,0,.8);
 
-// paddings
-$base-p: 20px;
-$base-p2:50px;
+$white: #fff;
+// $yellowHover: lighten(#fdc66a, 20%);
+// $yellowHover2: darken(#fdc66a, 10%);
+// $grey: #666666;
+// $grey2: #333333;
+// $bgc2: #111111;
+// $titleAfter: #181818;
 
-// sizes
-$base-s: 24px;
+// paddings 
+$p20: 20px;
+$p10: 10px;
