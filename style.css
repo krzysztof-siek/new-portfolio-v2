@@ -456,6 +456,83 @@ html {
   max-width: 1420px;
   width: 100%;
   margin: 0 auto;
+  padding: 20px 0;
+}
+
+.section {
+  min-height: 500px;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.btn {
+  padding: 20px 30px;
+  font-family: "Gotham", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn.primary {
+  background-color: #fdc66a;
+  color: #0c0c0c;
+}
+
+.big-text {
+  font-family: "Gotham", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.medium-text {
+  font-family: "GothamBook", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fdc66a;
+}
+
+.medium2-text {
+  font-family: "Gotham", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fdc66a;
+}
+
+.title-text {
+  font-family: "Gotham", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+  color: #fdc66a;
+}
+
+.desc-text {
+  font-family: "GoothamBook", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
 }
 
 header {
@@ -588,5 +665,61 @@ header nav .nav-button.open .btn-line:nth-child(2) {
 
 header nav .nav-button.open .btn-line:nth-child(3) {
   width: 12px;
+}
+
+.about {
+  background-color: #0c0c0c;
+}
+
+.about .flex .flex-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.about .flex .flex-image .dev-img {
+  max-width: 280px;
+  border-bottom: 2px solid #fdc66a;
+}
+
+.about .flex .flex-image .dev-img img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.about .flex .flex-desc {
+  width: 50%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about .flex .flex-desc .medium2-text {
+  margin-bottom: 20px;
+}
+
+.about .flex .flex-desc .desc-text {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.about .flex .flex-desc .medium-text {
+  margin-bottom: 20px;
+}
+
+.about .flex .flex-desc .sign-img {
+  margin-bottom: 20px;
+}
+
+.about .flex .flex-desc .btns-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about .flex .flex-desc .btns-container .btn:first-child {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

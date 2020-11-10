@@ -1,0 +1,51 @@
+.about {
+	background-color: $mainDark;
+
+	.flex {
+		.flex-image {
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			.dev-img {
+				max-width: 280px;
+				border-bottom: 2px solid $yellow;
+				img {
+					max-width: 100%;
+					max-height: 100%;
+					margin:auto;
+					display: block;
+				}
+			}
+			
+		}
+		.flex-desc {
+			width: 50%;
+			margin-bottom: 16px;
+			display: flex;
+			flex-direction: column;
+			.medium2-text {
+				margin-bottom: 20px;
+			}
+			.desc-text {
+				text-align: left;
+				margin-bottom: 20px;
+			}
+			.medium-text{
+				margin-bottom: 20px;
+			}
+			.sign-img {
+				margin-bottom: 20px;
+			}
+			.btns-container {
+				display: flex;
+				flex-direction: row;
+				.btn {
+					&:first-child {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
