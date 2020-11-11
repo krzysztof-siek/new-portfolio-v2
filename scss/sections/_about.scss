@@ -2,11 +2,16 @@
 	background-color: $mainDark;
 
 	.flex {
+		
 		.flex-image {
-			width: 50%;
 			display: flex;
 			justify-content: center;
 			align-items: flex-end;
+			margin-bottom: 50px;
+			@include medium {
+				margin-bottom: 0;
+				width: 50%;
+			}
 			.dev-img {
 				max-width: 280px;
 				border-bottom: 2px solid $yellow;
@@ -20,29 +25,52 @@
 			
 		}
 		.flex-desc {
-			width: 50%;
 			margin-bottom: 16px;
 			display: flex;
 			flex-direction: column;
+			@include medium {
+				max-width: 600px;
+				margin-right: auto;
+			}
+			
+			@include medium {
+				width: 50%;
+			}
 			.medium2-text {
 				margin-bottom: 20px;
 			}
 			.desc-text {
-				text-align: left;
 				margin-bottom: 20px;
 			}
 			.medium-text{
 				margin-bottom: 20px;
 			}
 			.sign-img {
-				margin-bottom: 20px;
+				margin-top: 20px;
+				margin-bottom: 40px;
+				margin: 20px auto 40px auto;
+				@include medium {
+					margin: 20px 0 40px 0;
+				}
 			}
 			.btns-container {
 				display: flex;
+				flex-direction: column;
+
+				@include medium {
 				flex-direction: row;
+
+				}
 				.btn {
+					width: 200px;
+					margin: 0 auto;
+					text-align: center;
 					&:first-child {
-						margin-right: 20px;
+						margin-bottom: 20px;
+						@include medium {
+							margin-right: 50px;
+							margin-bottom: 0;
+						}
 					}
 				}
 			}

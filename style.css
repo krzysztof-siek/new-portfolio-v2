@@ -469,10 +469,12 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 @media (min-width: 992px) {
   .flex {
+    margin-top: 50px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -529,10 +531,20 @@ html {
 .desc-text {
   font-family: "GoothamBook", sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
   font-weight: 400;
-  text-align: center;
   color: #fff;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .center-text {
+    text-align: left;
+  }
 }
 
 header {
@@ -672,10 +684,17 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 }
 
 .about .flex .flex-image {
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  .about .flex .flex-image {
+    margin-bottom: 0;
+    width: 50%;
+  }
 }
 
 .about .flex .flex-image .dev-img {
@@ -691,10 +710,22 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 }
 
 .about .flex .flex-desc {
-  width: 50%;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .about .flex .flex-desc {
+    max-width: 600px;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .about .flex .flex-desc {
+    width: 50%;
+  }
 }
 
 .about .flex .flex-desc .medium2-text {
@@ -702,7 +733,6 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 }
 
 .about .flex .flex-desc .desc-text {
-  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -711,15 +741,42 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 }
 
 .about .flex .flex-desc .sign-img {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin: 20px auto 40px auto;
+}
+
+@media (min-width: 992px) {
+  .about .flex .flex-desc .sign-img {
+    margin: 20px 0 40px 0;
+  }
 }
 
 .about .flex .flex-desc .btns-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .about .flex .flex-desc .btns-container {
+    flex-direction: row;
+  }
+}
+
+.about .flex .flex-desc .btns-container .btn {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .about .flex .flex-desc .btns-container .btn:first-child {
-  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .about .flex .flex-desc .btns-container .btn:first-child {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
