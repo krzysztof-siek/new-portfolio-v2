@@ -22,6 +22,11 @@
 				border-bottom: 3px solid $yellow;
 				position: relative;
 				z-index:1;
+				display: none;
+
+				@include medium {
+					display: block;
+				}
 				&:after {
 					position: absolute;
 					content: "";
@@ -49,11 +54,10 @@
 		.flex-desc {
 			display: flex;
 			flex-direction: column;
+			height: 400px;
+			justify-content: space-between;
 
-			@include medium {
-				justify-content: space-between;
-				height: 400px;
-			}
+			
 			.btn {
 				width: 200px;
 				text-align: center;

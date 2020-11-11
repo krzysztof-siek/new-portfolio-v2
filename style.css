@@ -460,7 +460,6 @@ html {
 }
 
 .section {
-  min-height: 500px;
   padding: 20px 20px 80px 20px;
 }
 
@@ -534,6 +533,10 @@ html {
   line-height: 55px;
   text-align: center;
   color: #fdc66a;
+}
+
+.title-text.dark {
+  color: #0c0c0c;
 }
 
 .desc-text {
@@ -717,6 +720,13 @@ header nav .nav-button.open .btn-line:nth-child(3) {
   border-bottom: 3px solid #fdc66a;
   position: relative;
   z-index: 1;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .welcome .flex .flex-image .dev-img {
+    display: block;
+  }
 }
 
 .welcome .flex .flex-image .dev-img:after {
@@ -742,13 +752,8 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 .welcome .flex .flex-desc {
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 992px) {
-  .welcome .flex .flex-desc {
-    justify-content: space-between;
-    height: 400px;
-  }
+  height: 400px;
+  justify-content: space-between;
 }
 
 .welcome .flex .flex-desc .btn {
@@ -875,6 +880,42 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 @media (min-width: 992px) {
   .about .flex .flex-desc .btns-container .btn:first-child {
     margin: 0 50px 0 0;
+  }
+}
+
+.interests {
+  background-color: #fdc66a;
+}
+
+.interests .section {
+  padding-bottom: 20px;
+}
+
+.interests .section .flex {
+  margin-top: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.interests .section .flex .single {
+  margin: 30px;
+}
+
+@media (min-width: 992px) {
+  .interests .section .flex .single {
+    margin: 20px 0;
+  }
+}
+
+.interests .section .flex .single .single-desc {
+  color: #0c0c0c;
+  font-weight: 700;
+  transform: translateY(10px);
+}
+
+@media (min-width: 992px) {
+  .interests .section .flex .single .single-desc {
+    transform: translateY(20px);
   }
 }
 /*# sourceMappingURL=style.css.map */

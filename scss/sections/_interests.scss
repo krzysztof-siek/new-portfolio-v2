@@ -1,0 +1,27 @@
+.interests {
+	background-color: $yellow;
+
+	.section {
+		padding-bottom: 20px;
+		.flex {
+			margin-top: 30px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			.single {
+				margin: 30px;
+				@include medium {
+					margin: 20px 0;
+				}
+				.single-desc {
+					color: $mainDark;
+					font-weight: 700;
+					transform: translateY(10px);
+					@include medium {
+					transform: translateY(20px);
+
+					}
+				}
+			}
+		}
+	}
+}
