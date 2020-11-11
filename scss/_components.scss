@@ -1,5 +1,5 @@
 .cont {
-	max-width: 1420px;
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 20px 0;
@@ -7,7 +7,7 @@
 
 .section {
 	min-height: 500px;
-	padding: 20px;
+	padding: 20px 20px 80px 20px; 
 }
 
 .flex {
@@ -46,6 +46,13 @@
 
 
 // Text 
+
+.strong {
+	color:$yellow;
+}
+.white {
+	color: $white !important;
+}
 
 .big-text {
 	font-family: "Gotham", sans-serif;
