@@ -1,0 +1,68 @@
+.contact {
+	background-color: $mainDark;
+
+	.flex {
+		align-items: center;
+	}
+	.photo {
+		width: 150px;
+		height: auto;
+		border: 2px solid $yellow;
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+	.contact-icon {
+		margin: 20px auto;
+
+		@include medium {
+			margin: 0;
+		}
+		.title-cont {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			color:$white;
+			margin-bottom: 10px;
+			cursor: pointer;
+			@include medium {
+				justify-content: flex-start;
+			}
+			.fas {
+				margin-right: 20px;
+				font-size: 18px;
+				transition: .3s;
+			}
+			.desc-text {
+				font-family: "Gotham",sans-serif;
+				font-size: 18px;
+				text-transform: uppercase;
+				font-weight: 700;
+				transition: .3s;
+			}
+		}
+		.small {
+			font-size: 14px;
+			color: $white;
+			opacity: .7;
+			letter-spacing: 2px;
+			transition: .3s;
+			cursor: pointer;
+		}
+		&:hover {
+			.desc-text {
+				color: $yellow;
+			}
+			.fas {
+				color: $yellow;
+			}
+			.small {
+				opacity: 1;
+				color: $white;
+			}
+		}
+	}
+}

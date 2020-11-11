@@ -62,30 +62,7 @@
 				width: 200px;
 				text-align: center;
 			}
-			.socials {
-				width: 260px;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: space-between;
-				.social-link {
-					background-color: transparent;
-					height: 40px;
-					width: 40px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					border: 2px solid $white;
-					border-radius: 50%;
-					color:$white;
-					text-decoration: none;
-					opacity: .7;
-					transition: .3s;
-					&:hover {
-						opacity: 1;
-					}
-				}
-			}
+			
 		}
 	}
 }
