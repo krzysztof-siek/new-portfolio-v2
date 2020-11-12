@@ -656,6 +656,10 @@ header nav .nav-links .nav-item .nav-link {
   transition: .3s;
 }
 
+header nav .nav-links .nav-item .nav-link:focus {
+  outline: none;
+}
+
 header nav .nav-links .nav-item .nav-link.active {
   color: #fdc66a;
   transition: .3s;

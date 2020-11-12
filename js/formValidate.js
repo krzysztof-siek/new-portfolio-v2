@@ -63,7 +63,6 @@ message.addEventListener('change', function(e) {
 contactForm.addEventListener('submit', function(e) {
 	e.preventDefault();
 	if(!nameError && !emailError && !messageError) {
-		console.log('prawidlowa validacja')
 		nameVal = name.value;
 		emailVal = email.value;
 		messageVal = message.value;
@@ -72,8 +71,11 @@ contactForm.addEventListener('submit', function(e) {
 		//     e.preventDefault();
 		// });
 		const formSent = document.querySelector('.form-sent')
-         formSent.classList.add('show')
+		 formSent.classList.add('show')
          const hideSentForm = () => {
+			name.value = "";
+			email.value = "";
+			message.value = "";
              formSent.classList.remove('show')
          }
          setTimeout(hideSentForm, 3000);
