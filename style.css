@@ -489,6 +489,7 @@ html {
   line-height: 24px;
   border-radius: 5px;
   text-decoration: none;
+  border: none;
   outline: none;
 }
 
@@ -1000,6 +1001,108 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 .contact .contact-icon:hover .small {
   opacity: 1;
   color: #fff;
+}
+
+.contact .flex {
+  position: relative;
+}
+
+.contact .flex .map {
+  width: 100%;
+  margin-bottom: 60px;
+  max-width: 550px;
+  height: 450px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .contact .flex .map {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.contact .flex .map iframe {
+  width: 100%;
+  min-height: 400px;
+  height: 450px;
+}
+
+.contact .flex .contact-form {
+  height: 450px;
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .contact .flex .contact-form {
+    padding-left: 55px;
+    width: 50%;
+  }
+}
+
+.contact .flex .contact-form .form-help-message {
+  color: #ff0033;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 1.4px;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.contact .flex .contact-form .form-help-message.hide {
+  visibility: hidden;
+}
+
+.contact .flex .contact-form .input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 3px solid transparent;
+}
+
+.contact .flex .contact-form .input.error {
+  border: 3px solid #ff0033;
+}
+
+.contact .flex .contact-form .input.textarea {
+  height: 175px;
+}
+
+.contact .flex .contact-form .input.name.verify, .contact .flex .contact-form .input.email.verify {
+  background: url("./img/verif.png");
+  background-repeat: no-repeat;
+  background-position: 101%;
+  background-color: #fff;
+}
+
+.contact .flex .contact-form .btn {
+  width: 100%;
+}
+
+.contact .flex .form-sent {
+  color: #fdc66a;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.contact .flex .form-sent.show {
+  display: block;
+}
+
+.contact .flex .form-sent i {
+  color: green;
+  font-size: 24px;
 }
 
 footer {

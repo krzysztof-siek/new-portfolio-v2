@@ -183,6 +183,26 @@
                             <h4 class="desc-text small">www.krzysztof-siek.pl</h4>
                         </div>
                     </div>
+                    <div class="flex">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.5259608709016!2d16.96071031594986!3d52.39714325307903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b097322144b%3A0xc29cbe1ebff9e744!2sKatowicka%2053c!5e0!3m2!1spl!2spl!4v1578926325268!5m2!1spl!2spl"
+                                 height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <form class="contact-form" id="contact-form"  novalidate>
+                            <input type="text" class="input name" placeholder="Name" name='name' id="name" required>
+                            <p class="form-help-message help-name hide">Musisz wpisać więcej niż 3 znaki...</p>
+                            <input type="email" class="input email" placeholder="Email" name='email' id="email" required>
+                            <p class="form-help-message help-email hide">Podaj prawidłowy adres email...</p>
+                            <textarea name="message" class="input textarea" placeholder="Message" name="message" rows="10" id="message"
+                            required></textarea>
+                            <p class="form-help-message help-message hide">Wiadomość powinna zawierać minimum 10 znaków</p>
+                            <button class="btn primary" type="submit" id='contactSubmit'  >Sent now</button>
+                        </form>
+                        <div class="form-sent">
+                            <h5>Formularz został wysłany <i class="fas fa-check"></i> </h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -212,6 +232,7 @@
         </footer>
 
         <script src="./js/script.js"></script>
+        <script src="./js/formValidate.js"></script>
     </body>
 
 </html>
