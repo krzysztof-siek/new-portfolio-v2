@@ -1165,10 +1165,121 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 
 .hire_me .section .flex .flex-desc .btn {
   margin-top: 50px;
+  display: block;
+  width: 200px;
+  text-align: center;
 }
 
 .hire_me .section .flex .flex-desc .desc-text {
   color: #0c0c0c;
+}
+
+.projects {
+  background-color: #0c0c0c;
+}
+
+.projects .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.projects .swiper-container .swipe-sideways {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #fff;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.projects .swiper-container .swipe-sideways p {
+  margin: 0 20px;
+}
+
+.projects .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  background-color: #111111;
+  overflow: hidden;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .projects .swiper-slide {
+    width: 500px;
+  }
+}
+
+.projects .swiper-slide .imgBox {
+  width: 100%;
+}
+
+.projects .swiper-slide .imgBox img {
+  width: 100%;
+}
+
+.projects .swiper-slide .details {
+  color: #fff;
+}
+
+.projects .swiper-slide .details .details-title {
+  color: #fdc66a;
+  font-size: 28px;
+  line-height: 30px;
+  font-family: "Gotham", sans-serif;
+  margin-bottom: 10px;
+}
+
+.projects .swiper-slide .details .details-subtitle {
+  color: #fff;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.projects .swiper-slide .details .details-desc {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+.projects .swiper-slide .details .details-desc .yellow {
+  color: #fdc66a;
+  font-weight: bold;
+}
+
+.projects .swiper-slide .view-project {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #fff;
+}
+
+.projects .swiper-slide .view-project .code,
+.projects .swiper-slide .view-project .live {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.projects .swiper-slide .view-project .code i,
+.projects .swiper-slide .view-project .live i {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.projects .swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.projects .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fdc66a;
 }
 
 footer {

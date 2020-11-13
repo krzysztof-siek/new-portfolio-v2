@@ -1,0 +1,111 @@
+.projects {
+	background-color: $mainDark;
+	.swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+
+        .swipe-sideways {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            color: $white;
+            transform: translateX(-50%);
+            display: flex;
+
+            p {
+                margin: 0 20px;
+            }
+        }
+
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 80%;
+        background-color: $bgc;
+        // background-color: $mainDark;
+        overflow: hidden;
+        padding: 20px;
+
+        @media(min-width: 768px) {
+            width: 500px;
+        }
+
+
+        .imgBox {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .details {
+            color: $white;
+
+            .details-title {
+                color: $yellow;
+                font-size: 28px;
+                line-height: 30px;
+                font-family: "Gotham", sans-serif;
+                margin-bottom: 10px;
+            }
+
+            .details-subtitle {
+                color: $white;
+                font-size: 20px;
+                line-height: 22px;
+            }
+
+            .details-desc {
+                font-size: 16px;
+                line-height: 20px;
+                padding-bottom: 20px;
+
+                .yellow {
+                    color: $yellow;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .view-project {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            color: $white;
+
+            .code,
+            .live {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 10px;
+                cursor: pointer;
+                text-decoration: none;
+                color: $white;
+
+                i {
+                    font-size: 24px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+
+
+        .swiper-pagination-bullet {
+            background-color: $white;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $yellow;
+        }
+    }
+
+}

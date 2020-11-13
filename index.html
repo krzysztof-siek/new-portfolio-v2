@@ -1,268 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Krzysztof Siek - Front-end developer</title>
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Krzysztof Siek - Front-end developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.min.css">
 
-    </head>
+</head>
 
-    <body>
-        <header>
-            <div class="cont">
-                <nav>
-                    <div class="nav-brand">
-                        <picture>
-                            <source srcset="./img/logo.webp" type="image/webp">
-                            <source srcset="./img/logo.png" type="image/png">
-                            <img src="./img/logo.png" alt="logo">
-                        </picture>
-                    </div>
-                    <ul class="nav-links">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=" #about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=" #skills" class="nav-link">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=" #projects" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=" #contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="nav-button">
-                        <div class="btn-line"></div>
-                        <div class="btn-line"></div>
-                        <div class="btn-line"></div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <section class="welcome">
-            <div class="cont">
-                <div class="section">
-                    <div class="flex">
-                        <div class="flex-image">
-                            <div class="dev-img">
-                                <picture>
-                                    <source srcset="./img/welcome-img.webp" type="image/webp">
-                                    <source srcset="./img/welcome-img.png" type="image/png">
-                                    <img src="./img/welcome-img.png" alt="developer welcome image">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="flex-desc">
-                            <h3 class="medium-text white">Hey</h3>
-                            <h2 class="big-text white">I'm
-                                <span class="strong">
-                                    Krzysiek
-                                </span>
-                            </h2>
-                            <h1 class="medium2-text white">Front-end developer</h1>
-                            <a href="#" class="btn primary">Hire me!</a>
-                            <div class="socials">
-                                <a href="#" class="social-link">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-link">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="#" class="social-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+<body>
+    <header>
+        <div class="cont">
+            <nav>
+                <div class="nav-brand">
+                    <picture>
+                        <source srcset="./img/logo.webp" type="image/webp">
+                        <source srcset="./img/logo.png" type="image/png">
+                        <img src="./img/logo.png" alt="logo">
+                    </picture>
                 </div>
-            </div>
-        </section>
-        <section class="about">
-            <div class="cont">
-                <h3 class="title-text">About</h3>
-                <h4 class="desc-text">Read about me...</h4>
-                <div class="section">
-                    <div class="flex">
-                        <div class="flex-image">
-                            <div class="dev-img">
-                                <picture>
-                                    <source srcset="./img/about-img.webp" type="image/webp">
-                                    <source srcset="./img/about-img.png" type="image/png">
-                                    <img src="./img/about-img.png" alt="developer image">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="flex-desc">
-                            <h2 class="medium2-text center-text">Krzysztof Siek</h2>
-                            <h4 class="desc-text center-text">My name is Krzysztof and i live in Poznań. I'm
-                                a Freelancer / Front-end Developer. I create modern websites using Html, Css, Js
-                                and many frameworks. My pages are always crafted with attention to finer details
-                                and care of semantics. As a perfectionist I attach grate importance to the
-                                quality of the code. I constantly strive to develop and improve my skills to
-                                make my projects even better and better.</h4>
-                            <h4 class="desc-text center-text">Determined, reliable, working with full commitment</h4>
-                            <h4 class="medium-text center-text">If you are interested in cooperation, please contact me!</h4>
-                            <div class="sign-img">
-                                <picture>
-                                    <source srcset="./img/sign.webp" type="image/webp">
-                                    <source srcset="./img/sign.png" type="image/png">
-                                    <img src="./img/sign.png" alt="developer image">
-                                </picture>
-                            </div>
-                            <div class="btns-container">
-                                <a href="#" class="btn primary">Download CV</a>
-                                <a href="#" class="btn primary">My Projects</a>
-                            </div>
-                        </div>
-                    </div>
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=" #about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=" #skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=" #projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=" #contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-button">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
                 </div>
-            </div>
-        </section>
-        <section class="interests">
-            <div class="cont">
-                <div class="section">
-                    <h3 class="title-text dark">Interests</h3>
-                    <h4 class="desc-text">Because life is no just coding</h4>
-                    <div class="flex">
-                        <div class="single">
-                            <img src="./img/interests-icons/bike.png" alt="bike icon">
-                            <p class="medium-text single-desc">Bike</p>
-                        </div>
-                        <div class="single">
-                            <img src="./img/interests-icons/gym.png" alt="gym icon">
-                            <p class="medium-text single-desc">Gym</p>
-                        </div>
-                        <div class="single">
-                            <img src="./img/interests-icons/music.png" alt="music icon">
-                            <p class="medium-text single-desc">Music</p>
-                        </div>
-                        <div class="single">
-                            <img src="./img/interests-icons/travel.png" alt="travel icon">
-                            <p class="medium-text single-desc">Travel</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- temp  -->
-        <section class="about">
-            <div class="cont">
-            </div>
-        </section>
-        <!-- end temp  -->
-
-        <section class="hire_me">
-            <div class="cont">
-                <div class="section">
-                    <div class="flex">
-                        <div class="flex-image">
-                            <div class="dev-img">
-                                <picture>
-                                    <source srcset="./img/hire_me-img.webp" type="image/webp">
-                                    <source srcset="./img/hire_me-img.png" type="image/png">
-                                    <img src="./img/hire_me-img.png" alt="hire me developer image">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="flex-desc">
-                            <h3 class="title-text dark">I'm avaiable for Freelancer projects!</h3>
-                            <h5 class="desc-text dark">If you have any projects in mind, don't hesitate to contact me</h5>
-                            <a href="javascript:void(0)" class="btn secondary">Hire me!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="cont">
-                <h3 class="title-text">Contact</h3>
-                <h4 class="desc-text">Get in touch!</h4>
-                <div class="section">
-                    <div class="flex">
-                        <div class="photo">
-                            <img src="./img//contact-img.png" alt="contact developer img">
-                        </div>
-                        <div class="contact-icon">
-                            <div class="title-cont">
-                                <i class="fas fa-phone-alt "></i>
-                                <h4 class="desc-text">Phone</h4>
-                            </div>
-                            <h4 class="desc-text small">663-271-178</h4>
-                        </div>
-                        <div class="contact-icon">
-                            <div class="title-cont">
-                                <i class="fas fa-envelope "></i>
-                                <h4 class="desc-text">Email</h4>
-                            </div>
-                            <h4 class="desc-text small">krzysztof.siek01@gmail.com</h4>
-                        </div>
-                        <div class="contact-icon">
-                            <div class="title-cont">
-                                <i class="fas fa-desktop "></i>
-                                <h4 class="desc-text">Website</h4>
-                            </div>
-                            <h4 class="desc-text small">www.krzysztof-siek.pl</h4>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.5259608709016!2d16.96071031594986!3d52.39714325307903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b097322144b%3A0xc29cbe1ebff9e744!2sKatowicka%2053c!5e0!3m2!1spl!2spl!4v1578926325268!5m2!1spl!2spl"
-                                 height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                        <form class="contact-form" id="contact-form"  novalidate>
-                            <input type="text" class="input name" placeholder="Name" name='name' id="name" required>
-                            <p class="form-help-message help-name hide">Musisz wpisać więcej niż 3 znaki...</p>
-                            <input type="email" class="input email" placeholder="Email" name='email' id="email" required>
-                            <p class="form-help-message help-email hide">Podaj prawidłowy adres email...</p>
-                            <textarea name="message" class="input textarea" placeholder="Message" name="message" rows="10" id="message"
-                            required></textarea>
-                            <p class="form-help-message help-message hide">Wiadomość powinna zawierać minimum 10 znaków</p>
-                            <button class="btn primary" type="submit" id='contactSubmit'  >Sent now</button>
-                        </form>
-                        <div class="form-sent">
-                            <h5>Formularz został wysłany <i class="fas fa-check"></i> </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="cont">
+            </nav>
+        </div>
+    </header>
+    <section class="welcome">
+        <div class="cont">
+            <div class="section">
                 <div class="flex">
-                    <h5 class="desc-text">
-                        &copy; 2020
-                        <span class="strong">
-                            Krzysztof Siek
-                        </span>
-                        All rights reserved.</h5>
-                    <div class="socials">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
+                    <div class="flex-image">
+                        <div class="dev-img">
+                            <picture>
+                                <source srcset="./img/welcome-img.webp" type="image/webp">
+                                <source srcset="./img/welcome-img.png" type="image/png">
+                                <img src="./img/welcome-img.png" alt="developer welcome image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="flex-desc">
+                        <h3 class="medium-text white">Hey</h3>
+                        <h2 class="big-text white">I'm
+                            <span class="strong">
+                                Krzysiek
+                            </span>
+                        </h2>
+                        <h1 class="medium2-text white">Front-end developer</h1>
+                        <a href="#" class="btn primary">Hire me!</a>
+                        <div class="socials">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
+    <section class="about">
+        <div class="cont">
+            <h3 class="title-text">About</h3>
+            <h4 class="desc-text">Read about me...</h4>
+            <div class="section">
+                <div class="flex">
+                    <div class="flex-image">
+                        <div class="dev-img">
+                            <picture>
+                                <source srcset="./img/about-img.webp" type="image/webp">
+                                <source srcset="./img/about-img.png" type="image/png">
+                                <img src="./img/about-img.png" alt="developer image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="flex-desc">
+                        <h2 class="medium2-text center-text">Krzysztof Siek</h2>
+                        <h4 class="desc-text center-text">My name is Krzysztof and i live in Poznań. I'm
+                            a Freelancer / Front-end Developer. I create modern websites using Html, Css, Js
+                            and many frameworks. My pages are always crafted with attention to finer details
+                            and care of semantics. As a perfectionist I attach grate importance to the
+                            quality of the code. I constantly strive to develop and improve my skills to
+                            make my projects even better and better.</h4>
+                        <h4 class="desc-text center-text">Determined, reliable, working with full commitment</h4>
+                        <h4 class="medium-text center-text">If you are interested in cooperation, please contact me!
+                        </h4>
+                        <div class="sign-img">
+                            <picture>
+                                <source srcset="./img/sign.webp" type="image/webp">
+                                <source srcset="./img/sign.png" type="image/png">
+                                <img src="./img/sign.png" alt="developer image">
+                            </picture>
+                        </div>
+                        <div class="btns-container">
+                            <a href="#" class="btn primary">Download CV</a>
+                            <a href="#" class="btn primary">My Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interests">
+        <div class="cont">
+            <div class="section">
+                <h3 class="title-text dark">Interests</h3>
+                <h4 class="desc-text">Because life is no just coding</h4>
+                <div class="flex">
+                    <div class="single">
+                        <img src="./img/interests-icons/bike.png" alt="bike icon">
+                        <p class="medium-text single-desc">Bike</p>
+                    </div>
+                    <div class="single">
+                        <img src="./img/interests-icons/gym.png" alt="gym icon">
+                        <p class="medium-text single-desc">Gym</p>
+                    </div>
+                    <div class="single">
+                        <img src="./img/interests-icons/music.png" alt="music icon">
+                        <p class="medium-text single-desc">Music</p>
+                    </div>
+                    <div class="single">
+                        <img src="./img/interests-icons/travel.png" alt="travel icon">
+                        <p class="medium-text single-desc">Travel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script src="./js/script.js"></script>
-        <script src="./js/formValidate.js"></script>
-    </body>
+    <!-- temp  -->
+    <section class="projects">
+        <div class="cont">
+            <div class="section">
+                <h3 class="title-text">Projects</h3>
+                <h4 class="desc-text">List of my recently projects</h4>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="imgBox">
+                                <img src="./img/projects/NewPortfolio.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3 class="details-title">My Portfolio</h3>
+                                <h4 class="details-subtitle">My new portfolio project. You are here</h4>
+                                <p class="details-desc">Technologies used: <span class="yellow">HTML</span> , <span
+                                        class="yellow"> CSS</span>, <span class="yellow"> JS</span>, <span class="yellow"> Sass
+                                    </span>. libraries JS - <span class="yellow"> Swipper </span>
+                                    - for Slider and <span class="yellow"> Gumshoe</span> - ScrollSpy </p>
+                            </div>
+                            <div class="view-project">
+                                <a href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i
+                                        class="fas fa-code"></i>GitHub<a>
+                                        <a href="https://krzysztof-siek.github.io/portfolio-new/." target="_blank"
+                                            class="live"><i class="fas fa-desktop"></i>Live</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBox">
+                                <img src="./img/projects/Megan.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3 class="details-title">Megan Fisher </h3>
+                                <h4 class="details-subtitle">Agency Interactive project</h4>
+                                <p class="details-desc">Technologies used: <span class="yellow">HTML</span> , <span
+                                        class="yellow"> CSS</span>, <span class="yellow"> JS</span>, <span class="yellow"> Sass
+                                    </span>. JS library - <span class="yellow"> Gumshoe</span> - ScrollSpy </p>
+                            </div>
+                            <div class="view-project">
+                                <a href="https://github.com/krzysztof-siek/Megan-Fisher-website" target="_blank" class="code">
+                                    <i class="fas fa-code"></i>GitHub<a>
+                                        <a href="https://krzysztof-siek.github.io/Megan-Fisher-website/" target="_blank"
+                                            class="live"><i class="fas fa-desktop"></i>Zobacz Live</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBox">
+                                <img src="./img/projects/Polind.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3 class="details-title">Polind </h3>
+                                <h4 class="details-subtitle">Travel Agency project</h4>
+                                <p class="details-desc">Technologies used: <span class="yellow">HTML</span> , <span
+                                        class="yellow"> CSS</span>, <span class="yellow"> JS</span>.</p>
+                            </div>
+                            <div class="view-project">
+                                <a href="https://github.com/krzysztof-siek/Polind" target="_blank" class="code"> <i
+                                        class="fas fa-code"></i>GitHub<a>
+                                        <a href="https://krzysztof-siek.github.io/Polind/" target="_blank" class="live"><i
+                                                class="fas fa-desktop"></i>Zobacz Live</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBox">
+                                <img src="./img/projects/Agency.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3 class="details-title">IT Agency </h3>
+                                <h4 class="details-subtitle">Project of IT Agency</h4>
+                                <p class="details-desc">UTechnologies used: <span class="yellow">HTML</span> , <span
+                                        class="yellow"> CSS</span>, <span class="yellow"> JS</span>.</p>
+                            </div>
+                            <div class="view-project">
+                                <a href="https://github.com/krzysztof-siek/it-agency" target="_blank" class="code"> <i
+                                        class="fas fa-code"></i>GitHub<a>
+                                        <a href="https://krzysztof-siek.github.io/it-agency/" target="_blank" class="live"><i
+                                                class="fas fa-desktop"></i>Zobacz Live</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBox">
+                                <img src="./img/projects/Diet.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3 class="details-title">Diet Clinic 1000kcal </h3>
+                                <h4 class="details-subtitle">Project of online Diet Clinic</h4>
+                                <p class="details-desc">Technologies used: <span class="yellow">HTML</span> , <span
+                                        class="yellow"> CSS</span>, <span class="yellow"> JS</span>, <span class="yellow">
+                                        Bootstrap</span> </p>
+                            </div>
+                            <div class="view-project">
+                                <a href="https://github.com/krzysztof-siek/1000kcal---poradnia-dietetyczna" target="_blank"
+                                    class="code"> <i class="fas fa-code"></i>GitHub<a>
+                                        <a href=" https://krzysztof-siek.github.io/1000kcal---poradnia-dietetyczna/."
+                                            target="_blank" class="live"><i class="fas fa-desktop"></i>Zobacz Live</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBox">
+                                <img src="./img/projects//ToDoApp.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3 class="details-title">To Do App </h3>
+                                <h4 class="details-subtitle">Project of To Do App</h4>
+                                <p class="details-desc">Technologies used: <span class="yellow">HTML</span>, <span
+                                        class="yellow"> CSS</span>, <span class="yellow"> JS </span>, <span class="yellow">
+                                        React</span>, <span class="yellow"> Sass
+                                    </span>, <span class="yellow"> Firebase </span>
+                                    - to keeping tasks, and <span class="yellow">GSAP / TweenMax </span> - do animations
+                                </p>
+                            </div>
+                            <div class="view-project">
+                                <a href="https://github.com/krzysztof-siek/to-do-app" target="_blank" class="code"> <i
+                                        class="fas fa-code"></i>GitHub<a>
+                                        <a href="https://krzysztof-siek.github.io/to-do-app/." target="_blank" class="live"><i
+                                                class="fas fa-desktop"></i>Zobacz Live</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBox">
+                                <img src="./img/projects/Api.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3 class="details-title">Project API </h3>
+                                <h4 class="details-subtitle">REST API fetching users</h4>
+                                <p class="details-desc">Technologies used: <span class="yellow">HTML</span> , <span
+                                        class="yellow"> CSS</span>, <span class="yellow"> JS</span>, <span class="yellow">
+                                        VUE</span> </p>
+                            </div>
+                            <div class="view-project">
+                                <a href="https://github.com/krzysztof-siek/zadanie-rekrutacyjne" target="_blank" class="code">
+                                    <i class="fas fa-code"></i>GitHub<a>
+                                        <a href="https://krzysztof-siek.github.io/zadanie-rekrutacyjne/" target="_blank"
+                                            class="live"><i class="fas fa-desktop"></i>Zobacz Live</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBox">
+                                <img src="./img/projects/portfolio.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3 class="details-title">My old portfolio </h3>
+                                <h4 class="details-subtitle">My first portfolio website</h4>
+                                <p class="details-desc">Technologies used: <span class="yellow">HTML</span> , <span
+                                        class="yellow"> CSS</span>, <span class="yellow"> JS</span>, <span class="yellow"> Sass
+                                    </span> <span class="yellow"> Bootstrap
+                                    </span> . JS Libraries - <span class="yellow"> Tree.js / GSAP</span>
+                                    - to animations </p>
+                            </div>
+                            <div class="view-project">
+                                <a href="https://github.com/krzysztof-siek/new_portfolio" target="_blank" class="code"> <i
+                                        class="fas fa-code"></i>GitHub<a>
+                                        <a href="https://krzysztof-siek.github.io/new_portfolio/." target="_blank"
+                                            class="live"><i class="fas fa-desktop"></i>Zobacz Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swipe-sideways"><i class="fas fa-long-arrow-alt-left"></i>
+                        <p> swipe sideways</p> <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end temp  -->
+
+    <section class="hire_me">
+        <div class="cont">
+            <div class="section">
+                <div class="flex">
+                    <div class="flex-image">
+                        <div class="dev-img">
+                            <picture>
+                                <source srcset="./img/hire_me-img.webp" type="image/webp">
+                                <source srcset="./img/hire_me-img.png" type="image/png">
+                                <img src="./img/hire_me-img.png" alt="hire me developer image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="flex-desc">
+                        <h3 class="title-text dark">I'm avaiable for Freelancer projects!</h3>
+                        <h5 class="desc-text dark">If you have any projects in mind, don't hesitate to contact me</h5>
+                        <a href="javascript:void(0)" class="btn secondary">Hire me!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="cont">
+            <h3 class="title-text">Contact</h3>
+            <h4 class="desc-text">Get in touch!</h4>
+            <div class="section">
+                <div class="flex">
+                    <div class="photo">
+                        <img src="./img//contact-img.png" alt="contact developer img">
+                    </div>
+                    <div class="contact-icon">
+                        <div class="title-cont">
+                            <i class="fas fa-phone-alt "></i>
+                            <h4 class="desc-text">Phone</h4>
+                        </div>
+                        <h4 class="desc-text small">663-271-178</h4>
+                    </div>
+                    <div class="contact-icon">
+                        <div class="title-cont">
+                            <i class="fas fa-envelope "></i>
+                            <h4 class="desc-text">Email</h4>
+                        </div>
+                        <h4 class="desc-text small">krzysztof.siek01@gmail.com</h4>
+                    </div>
+                    <div class="contact-icon">
+                        <div class="title-cont">
+                            <i class="fas fa-desktop "></i>
+                            <h4 class="desc-text">Website</h4>
+                        </div>
+                        <h4 class="desc-text small">www.krzysztof-siek.pl</h4>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.5259608709016!2d16.96071031594986!3d52.39714325307903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b097322144b%3A0xc29cbe1ebff9e744!2sKatowicka%2053c!5e0!3m2!1spl!2spl!4v1578926325268!5m2!1spl!2spl"
+                            height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <input type="text" class="input name" placeholder="Name" name='name' id="name" required>
+                        <p class="form-help-message help-name hide">Musisz wpisać więcej niż 3 znaki...</p>
+                        <input type="email" class="input email" placeholder="Email" name='email' id="email" required>
+                        <p class="form-help-message help-email hide">Podaj prawidłowy adres email...</p>
+                        <textarea name="message" class="input textarea" placeholder="Message" name="message" rows="10"
+                            id="message" required></textarea>
+                        <p class="form-help-message help-message hide">Wiadomość powinna zawierać minimum 10 znaków</p>
+                        <button class="btn primary" type="submit" id='contactSubmit'>Sent now</button>
+                    </form>
+                    <div class="form-sent">
+                        <h5>Formularz został wysłany <i class="fas fa-check"></i> </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="cont">
+            <div class="flex">
+                <h5 class="desc-text">
+                    &copy; 2020
+                    <span class="strong">
+                        Krzysztof Siek
+                    </span>
+                    All rights reserved.</h5>
+                <div class="socials">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/formValidate.js"></script>
+</body>
 
 </html>
