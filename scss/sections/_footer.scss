@@ -6,6 +6,7 @@ footer {
 		flex-direction: column-reverse;
 		@include medium {
 			flex-direction: row;
+			align-items: center;
 		}
 	}
 	.socials {

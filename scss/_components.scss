@@ -40,6 +40,10 @@
 		background-color: $yellow;
 		color:$mainDark;
 	}
+	&.secondary {
+		background-color: $mainDark;
+		color: #fff;
+	}
 }
 
 .socials {
@@ -72,6 +76,9 @@
 
 
 // Text 
+.dark {
+	color: $mainDark;
+}
 
 .strong {
 	color:$yellow;
