@@ -1175,14 +1175,98 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 }
 
 .projects {
-  background-color: #0c0c0c;
+  background-color: #111111;
 }
 
 .projects .swiper-container {
   width: 100%;
   padding-top: 50px;
+  margin-top: 80px;
   padding-bottom: 50px;
   position: relative;
+}
+
+.projects .swiper-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  background-color: #0c0c0c;
+  overflow: hidden;
+  padding: 20px 20px 30px 20px;
+}
+
+@media (min-width: 768px) {
+  .projects .swiper-container .swiper-slide {
+    width: 500px;
+  }
+}
+
+.projects .swiper-container .swiper-slide .slide-img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .projects .swiper-container .swiper-slide .slide-img {
+    width: 500px;
+  }
+}
+
+.projects .swiper-container .swiper-slide .slide-img img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.projects .swiper-container .swiper-slide .details {
+  color: #fff;
+}
+
+.projects .swiper-container .swiper-slide .details .strong {
+  font-weight: 700;
+}
+
+.projects .swiper-container .swiper-slide .details .medium2-text {
+  line-height: 38px;
+  margin-top: 5px;
+}
+
+.projects .swiper-container .swiper-slide .details .medium-text {
+  color: #fff;
+  font-size: 20px;
+  font-family: "GothamBook";
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.projects .swiper-container .swiper-slide .details .desc-text {
+  text-align: left;
+  line-height: 26px;
+  min-height: 52px;
+}
+
+.projects .swiper-container .swiper-slide .view-project {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #fff;
+}
+
+.projects .swiper-container .swiper-slide .view-project .code,
+.projects .swiper-container .swiper-slide .view-project .live {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.projects .swiper-container .swiper-slide .view-project .code i,
+.projects .swiper-container .swiper-slide .view-project .live i {
+  font-size: 24px;
+  padding: 10px;
 }
 
 .projects .swiper-container .swipe-sideways {
@@ -1198,87 +1282,11 @@ header nav .nav-button.open .btn-line:nth-child(3) {
   margin: 0 20px;
 }
 
-.projects .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 80%;
-  background-color: #111111;
-  overflow: hidden;
-  padding: 20px;
-}
-
-@media (min-width: 768px) {
-  .projects .swiper-slide {
-    width: 500px;
-  }
-}
-
-.projects .swiper-slide .imgBox {
-  width: 100%;
-}
-
-.projects .swiper-slide .imgBox img {
-  width: 100%;
-}
-
-.projects .swiper-slide .details {
-  color: #fff;
-}
-
-.projects .swiper-slide .details .details-title {
-  color: #fdc66a;
-  font-size: 28px;
-  line-height: 30px;
-  font-family: "Gotham", sans-serif;
-  margin-bottom: 10px;
-}
-
-.projects .swiper-slide .details .details-subtitle {
-  color: #fff;
-  font-size: 20px;
-  line-height: 22px;
-}
-
-.projects .swiper-slide .details .details-desc {
-  font-size: 16px;
-  line-height: 20px;
-  padding-bottom: 20px;
-}
-
-.projects .swiper-slide .details .details-desc .yellow {
-  color: #fdc66a;
-  font-weight: bold;
-}
-
-.projects .swiper-slide .view-project {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  color: #fff;
-}
-
-.projects .swiper-slide .view-project .code,
-.projects .swiper-slide .view-project .live {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff;
-}
-
-.projects .swiper-slide .view-project .code i,
-.projects .swiper-slide .view-project .live i {
-  font-size: 24px;
-  padding: 10px;
-}
-
-.projects .swiper-pagination .swiper-pagination-bullet {
+.projects .swiper-container .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
 }
 
-.projects .swiper-pagination .swiper-pagination-bullet-active {
+.projects .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fdc66a;
 }
 

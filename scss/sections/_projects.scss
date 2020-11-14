@@ -1,111 +1,111 @@
 .projects {
-	background-color: $mainDark;
+	background-color: $bgc;
+
 	.swiper-container {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        position: relative;
+		width: 100%;
+		padding-top: 50px;
+		margin-top: 80px;
+		padding-bottom: 50px;
+		position: relative;
 
-        .swipe-sideways {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            color: $white;
-            transform: translateX(-50%);
-            display: flex;
+		.swiper-slide {
+			background-position: center;
+			background-size: cover;
+			width: 80%;
+			background-color: $mainDark;
+			overflow: hidden;
+			padding: 20px 20px 30px 20px;
+	
+			@media(min-width: 768px) {
+				width: 500px;
+			}
 
-            p {
-                margin: 0 20px;
-            }
-        }
+			.slide-img {
+				width: 100%;
+				@include medium {
+				width: 500px;
 
-    }
+				}
+				img {
+					max-width: 100%;
+					max-height: 100%;
+					display: block;
+					margin: auto;
+				}
+			}
+	
+			.details {
+				color: $white;
+	
+				.strong {
+					font-weight: 700;
+				}
+	
+				.medium2-text {
+					line-height: 38px;
+					margin-top: 5px;
+				}
+	
+				.medium-text {
+					color: #fff;
+					font-size: 20px;
+					font-family: "GothamBook";
+					line-height: 30px;
+					margin-bottom: 5px;
+				}
+	
+				.desc-text {
+					text-align: left;
+					line-height: 26px;
+					min-height: 52px;
+				}
+			}
+	
+			.view-project {
+				display: flex;
+				justify-content: space-between;
+				font-size: 18px;
+				color: $white;
+	
+				.code,
+				.live {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin: 10px;
+					cursor: pointer;
+					text-decoration: none;
+					color: $white;
+	
+					i {
+						font-size: 24px;
+						padding: 10px;
+					}
+				}
+			}
+		}
 
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 80%;
-        background-color: $bgc;
-        // background-color: $mainDark;
-        overflow: hidden;
-        padding: 20px;
+		.swipe-sideways {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			color: $white;
+			transform: translateX(-50%);
+			display: flex;
 
-        @media(min-width: 768px) {
-            width: 500px;
-        }
+			p {
+				margin: 0 20px;
+			}
+		}
 
-
-        .imgBox {
-            width: 100%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .details {
-            color: $white;
-
-            .details-title {
-                color: $yellow;
-                font-size: 28px;
-                line-height: 30px;
-                font-family: "Gotham", sans-serif;
-                margin-bottom: 10px;
-            }
-
-            .details-subtitle {
-                color: $white;
-                font-size: 20px;
-                line-height: 22px;
-            }
-
-            .details-desc {
-                font-size: 16px;
-                line-height: 20px;
-                padding-bottom: 20px;
-
-                .yellow {
-                    color: $yellow;
-                    font-weight: bold;
-                }
-            }
-        }
-
-        .view-project {
-            display: flex;
-            justify-content: space-between;
-            font-size: 18px;
-            color: $white;
-
-            .code,
-            .live {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 10px;
-                cursor: pointer;
-                text-decoration: none;
-                color: $white;
-
-                i {
-                    font-size: 24px;
-                    padding: 10px;
-                }
-            }
-        }
-    }
-
-    .swiper-pagination {
-
-
-        .swiper-pagination-bullet {
-            background-color: $white;
-        }
-
-        .swiper-pagination-bullet-active {
-            background-color: $yellow;
-        }
-    }
-
+		.swiper-pagination {
+			.swiper-pagination-bullet {
+				background-color: $white;
+			}
+	
+			.swiper-pagination-bullet-active {
+				background-color: $yellow;
+			}
+		}
+	}
 }
