@@ -1317,4 +1317,26 @@ footer .socials {
     margin-bottom: 0;
   }
 }
+
+.features {
+  background-color: #0c0c0c;
+}
+
+.features .single {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 30px;
+}
+
+.features .single img {
+  width: 100%;
+}
+
+.features .single .single-desc {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /*# sourceMappingURL=style.css.map */

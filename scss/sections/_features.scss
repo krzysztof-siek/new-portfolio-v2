@@ -1,0 +1,18 @@
+.features {
+	background-color: $mainDark;
+	.single {
+		width: 120px;
+		height: 120px;
+		position: relative;
+		margin: 30px;
+		img {
+			width: 100%;
+		}
+		.single-desc {
+			position: absolute;
+			top:-30px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
