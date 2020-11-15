@@ -637,7 +637,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
   position: relative;
 }
 
@@ -837,7 +837,7 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 }
 
 .about {
-  background-color: #0c0c0c;
+  background-color: #111111;
 }
 
 .about .section-title:after {
@@ -972,7 +972,7 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 }
 
 .contact {
-  background-color: #0c0c0c;
+  background-color: #111111;
 }
 
 .contact .section-title:after {
@@ -1336,7 +1336,7 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 }
 
 footer {
-  background-color: #0c0c0c;
+  background-color: #111111;
 }
 
 footer .flex {
@@ -1347,6 +1347,7 @@ footer .flex {
 
 @media (min-width: 992px) {
   footer .flex {
+    padding: 0 20px;
     flex-direction: row;
     align-items: center;
   }

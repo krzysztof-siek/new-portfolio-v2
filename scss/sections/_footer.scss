@@ -1,10 +1,11 @@
 footer {
-	background-color: $mainDark;
+	background-color: $bgc;
 	.flex {
 		margin-top: 0;
 		padding: 30px 20px;
 		flex-direction: column-reverse;
 		@include medium {
+			padding: 0 20px;
 			flex-direction: row;
 			align-items: center;
 		}
