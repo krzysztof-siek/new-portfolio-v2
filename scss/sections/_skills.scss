@@ -1,6 +1,13 @@
 .skills {
 	background-color: $mainDark;
 
+	.section-title {
+		&:after {
+			content: "Skills";
+		}
+	}
+	
+
 	.skils-container {
 		display: flex;
 		flex-direction: row;

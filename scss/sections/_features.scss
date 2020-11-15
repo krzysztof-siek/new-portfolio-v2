@@ -1,5 +1,10 @@
 .features {
 	background-color: $mainDark;
+	.section-title {
+		&:after {
+			content: "Features";
+		}
+	}
 	.single {
 		width: 120px;
 		height: 120px;

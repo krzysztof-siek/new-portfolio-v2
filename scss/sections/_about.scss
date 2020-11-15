@@ -1,6 +1,12 @@
 .about {
 	background-color: $mainDark;
 
+	.section-title {
+		&:after {
+			content: "About";
+		}
+	}
+
 	.flex {
 		
 		.flex-image {

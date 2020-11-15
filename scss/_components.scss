@@ -115,6 +115,8 @@
 	line-height: 55px;
 	text-align: center;
 	color:$yellow;
+	position: relative;
+	
 	&.dark {
 		color: $mainDark;
 	}
@@ -127,11 +129,37 @@
 	font-weight: 400;
 	color:$white;
 	text-align: center;
+	margin: 0 5px;
 }
 
 .center-text {
 	text-align: center;
 	@include medium {
 		text-align: left;
+	}
+}
+
+.section-title {
+	position: relative;
+	z-index: 2;
+	@include medium {
+		margin-top: 30px;
+	}
+	&:after {
+		position: absolute;
+		top:-10px;
+		left:50%;
+		transform: translateX(-50%);
+		text-transform: uppercase;
+		font-size: 42px;
+		color: $after;
+		letter-spacing: 10px;
+		font-family: "Gotham", sans-serif;
+		font-weight: bolder;
+		z-index: -1;
+
+		@include medium {
+			font-size: 96px;
+		}
 	}
 }

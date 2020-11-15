@@ -571,6 +571,7 @@ html {
   line-height: 55px;
   text-align: center;
   color: #fdc66a;
+  position: relative;
 }
 
 .title-text.dark {
@@ -584,6 +585,7 @@ html {
   font-weight: 400;
   color: #fff;
   text-align: center;
+  margin: 0 5px;
 }
 
 .center-text {
@@ -593,6 +595,37 @@ html {
 @media (min-width: 992px) {
   .center-text {
     text-align: left;
+  }
+}
+
+.section-title {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .section-title {
+    margin-top: 30px;
+  }
+}
+
+.section-title:after {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 42px;
+  color: #181818;
+  letter-spacing: 10px;
+  font-family: "Gotham", sans-serif;
+  font-weight: bolder;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .section-title:after {
+    font-size: 96px;
   }
 }
 
@@ -807,6 +840,10 @@ header nav .nav-button.open .btn-line:nth-child(3) {
   background-color: #0c0c0c;
 }
 
+.about .section-title:after {
+  content: "About";
+}
+
 .about .flex .flex-image {
   display: flex;
   justify-content: center;
@@ -936,6 +973,10 @@ header nav .nav-button.open .btn-line:nth-child(3) {
 
 .contact {
   background-color: #0c0c0c;
+}
+
+.contact .section-title:after {
+  content: "Contact";
 }
 
 .contact .flex {
@@ -1178,6 +1219,10 @@ header nav .nav-button.open .btn-line:nth-child(3) {
   background-color: #111111;
 }
 
+.projects .section-title:after {
+  content: "Projects";
+}
+
 .projects .swiper-container {
   width: 100%;
   padding-top: 50px;
@@ -1322,6 +1367,10 @@ footer .socials {
   background-color: #0c0c0c;
 }
 
+.features .section-title:after {
+  content: "Features";
+}
+
 .features .single {
   width: 120px;
   height: 120px;
@@ -1342,6 +1391,10 @@ footer .socials {
 
 .skills {
   background-color: #0c0c0c;
+}
+
+.skills .section-title:after {
+  content: "Skills";
 }
 
 .skills .skils-container {

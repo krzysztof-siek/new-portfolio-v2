@@ -1,6 +1,12 @@
 .projects {
 	background-color: $bgc;
 
+	.section-title {
+		&:after {
+			content: "Projects";
+		}
+	}
+
 	.swiper-container {
 		width: 100%;
 		padding-top: 50px;

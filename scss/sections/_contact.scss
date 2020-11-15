@@ -1,5 +1,10 @@
 .contact {
 	background-color: $mainDark;
+	.section-title {
+		&:after {
+			content: "Contact";
+		}
+	}
 
 	.flex {
 		align-items: center;
