@@ -1,0 +1,70 @@
+.skills {
+	background-color: $mainDark;
+
+	.skils-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		max-width: 600px;
+
+		.single-icon {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin: 20px;
+
+
+			&.white {
+				background-color: #fff;
+			}
+			
+
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				display: block;
+				margin: auto;
+			}
+		}
+	}
+
+	.progress-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 240px;
+		margin-top: 50px;
+		width: 80%;
+		@include medium {
+			width: 500px;
+			padding: 20px 0 20px 50px;
+			margin-top: 0;
+			height: 240px;
+			min-width: 45%;
+		}
+
+		.progress-bar {
+            height: 8px;
+            border: 1px solid $yellow;
+            background-color: $white;
+            border-radius: 5px;
+
+            .content {
+                width: 80%;
+                height: 100%;
+                background-color: $yellow;
+                position: relative;
+                transition: 1s;
+
+                .percent {
+                    position: absolute;
+                    top: -30px;
+                    right: -30px;
+                    color: $white;
+                }
+            }
+        }
+	}
+}

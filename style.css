@@ -1339,4 +1339,76 @@ footer .socials {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.skills {
+  background-color: #0c0c0c;
+}
+
+.skills .skils-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 600px;
+}
+
+.skills .skils-container .single-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.skills .skils-container .single-icon.white {
+  background-color: #fff;
+}
+
+.skills .skils-container .single-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.skills .progress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 240px;
+  margin-top: 50px;
+  width: 80%;
+}
+
+@media (min-width: 992px) {
+  .skills .progress-container {
+    width: 500px;
+    padding: 20px 0 20px 50px;
+    margin-top: 0;
+    height: 240px;
+    min-width: 45%;
+  }
+}
+
+.skills .progress-container .progress-bar {
+  height: 8px;
+  border: 1px solid #fdc66a;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.skills .progress-container .progress-bar .content {
+  width: 80%;
+  height: 100%;
+  background-color: #fdc66a;
+  position: relative;
+  transition: 1s;
+}
+
+.skills .progress-container .progress-bar .content .percent {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
