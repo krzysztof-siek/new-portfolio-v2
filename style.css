@@ -836,6 +836,12 @@ header nav .nav-button.open .btn-line:nth-child(3) {
   text-align: center;
 }
 
+@media (min-width: 992px) {
+  .welcome .flex .flex-desc .btn {
+    margin-top: 70px;
+  }
+}
+
 .about {
   background-color: #111111;
 }
