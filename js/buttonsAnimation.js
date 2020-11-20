@@ -10,25 +10,30 @@ let frameIndex = 0;
 let timeoutId = undefined;
 
 
+let buttonId = "";
 
 const resetText = function resetText() {
+    let element = document.getElementById(buttonId)
     let width = window.innerWidth;
     if (width >= 768) {
         if (timeoutId !== undefined) clearTimeout(timeoutId);
         frameIndex = 0;
-        element.innerText = TEXT;
-        element2.innerText = TEXT;
+        if(element) {
+            element.innerText = TEXT
+        } else {
+            animateButtons.forEach(el => el.innerText = TEXT)
+        }
     }
 }
 
 const setRandomText = function setRandomText() {
+    let element = document.getElementById(buttonId)
     let width = window.innerWidth;
     if (width >= 768) {
         const text = Array.from({
             length: TEXT.length
         }).map(() => CHARACTERS[~~(Math.random() * CHARACTERS.length)]);
-        element.innerText = text.join('');
-        element2.innerText = text.join('');
+        element.innerText = text.join('')
     }
 }
 
@@ -45,14 +50,17 @@ const animate = function animate() {
     }
 }
 
-const element = document.getElementById('anim-btn-1');
-const element2 = document.getElementById('anim-btn-2');
 
+const animateButtons = document.querySelectorAll('.animateButton')
 
-element.addEventListener('mouseenter', animate);
-element.addEventListener('mouseout', resetText);
-element2.addEventListener('mouseenter', animate);
-element2.addEventListener('mouseout', resetText);
+startButtonAnimate = (e) => {
+    if(e.target.id) {
+        buttonId = e.target.id
+        animate()
+    }
+}
 
+animateButtons.forEach(el => el.addEventListener('mouseenter', startButtonAnimate))
+animateButtons.forEach(el => el.addEventListener('mouseout', resetText))
 
 resetText();
