@@ -491,16 +491,31 @@ html {
   text-decoration: none;
   border: none;
   outline: none;
+  transition: .3s;
 }
 
 .btn.primary {
+  border: 2px solid transparent;
   background-color: #fdc66a;
   color: #0c0c0c;
+}
+
+.btn.primary:hover {
+  background-color: #0c0c0c;
+  color: #fff;
+  border-color: #fdc66a;
 }
 
 .btn.secondary {
   background-color: #0c0c0c;
   color: #fff;
+  border: 2px solid transparent;
+}
+
+.btn.secondary:hover {
+  color: #0c0c0c;
+  border-color: #0c0c0c;
+  background-color: #fdc66a;
 }
 
 .socials {
@@ -527,8 +542,18 @@ html {
   outline: none;
 }
 
+.socials .social-link .fab {
+  transition: .3s;
+}
+
 .socials .social-link:hover {
   opacity: 1;
+  background-color: #fdc66a;
+  border-color: #fdc66a;
+}
+
+.socials .social-link:hover .fab {
+  color: black;
 }
 
 .dark {
@@ -686,7 +711,7 @@ header nav .nav-links .nav-item {
 
 @media (min-width: 992px) {
   header nav .nav-links .nav-item {
-    margin: 5px 10px;
+    margin: 5px 30px;
   }
 }
 

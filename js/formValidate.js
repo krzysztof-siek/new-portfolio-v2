@@ -52,9 +52,11 @@ message.addEventListener('change', function(e) {
 	if(e.target.value.length >= 10) {
 		messageError = false;
 		help.classList.add('hide')
+		message.classList.remove('error')
 	} else {
 		messageError = true;
 		help.classList.remove('hide')
+		message.classList.add('error')
 	}
 	
 })
@@ -84,16 +86,19 @@ contactForm.addEventListener('submit', function(e) {
 			name.classList.remove('verify')
 			let help = document.querySelector(`.help-name`)
 			help.classList.remove('hide')
+			name.classList.add('error')
 		} 
 		if(emailError) {
 			email.classList.remove('verify')
 			let help = document.querySelector(`.help-email`)
 			help.classList.remove('hide')
+			email.classList.add('error')
 		} 
 		if(messageError) {
 			message.classList.remove('verify')
 			let help = document.querySelector(`.help-message`)
 			help.classList.remove('hide')
+			message.classList.add('error')
 		}
 	}
 })
