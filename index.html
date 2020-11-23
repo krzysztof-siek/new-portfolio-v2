@@ -47,7 +47,7 @@
             </nav>
         </div>
     </header>
-    <section class="welcome">
+    <section class="welcome" id="home">
         <div class="cont">
             <div class="section">
                 <div class="flex">
@@ -68,7 +68,7 @@
                             </span>
                         </h2>
                         <h1 class="medium2-text white">Front-end developer</h1>
-                        <a href="#" class="btn primary animateButton" id="anim-btn-1">Hire me!</a>
+                        <a href="#contact" class="btn primary animateButton" id="anim-btn-1">Hire me!</a>
                         <div class="socials">
                             <a href="#" class="social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -85,7 +85,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="cont">
             <h3 class="title-text section-title">About</h3>
             <h4 class="desc-text">Read about me...</h4>
@@ -119,7 +119,7 @@
                             </picture>
                         </div>
                         <div class="btns-container">
-                            <a href="#" class="btn primary">Download CV</a>
+                            <a href="javascript:void(0)" class="btn primary download-cv">Download CV</a>
                             <a href="#" class="btn primary">My Projects</a>
                         </div>
                     </div>
@@ -127,6 +127,14 @@
             </div>
         </div>
     </section>
+    <div class="modal-background hide">
+        <div class="modal-content">
+            <h3 class="modal-text">If you are a recruiter and would like to receive my CV, please use the contact form.
+            </h3>
+            <h5 class="modal-text">Best regards</h5>
+            <i class="fas fa-times-circle fa-2x close-modal-btn"></i>
+        </div>
+    </div>
     <section class="interests">
         <div class="cont">
             <div class="section">
@@ -154,7 +162,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="cont">
             <h3 class="title-text section-title">Skills</h3>
             <h4 class="desc-text">Technologies and tools that i use on a daily basis</h4>
@@ -201,7 +209,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="cont">
             <div class="section">
                 <h3 class="title-text section-title">Projects</h3>
@@ -383,14 +391,14 @@
                     <div class="flex-desc">
                         <h3 class="title-text dark">I'm avaiable for Freelancer projects!</h3>
                         <h5 class="desc-text dark">If you have any projects in mind, don't hesitate to contact me</h5>
-                        <a href="javascript:void(0)" class="btn secondary animateButton" id="anim-btn-2">Hire me!</a>
+                        <a href="#contact" class="btn secondary animateButton" id="anim-btn-2">Hire me!</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features">
+    <section class="features" >
         <div class="cont">
             <h3 class="title-text section-title">Features</h3>
             <h4 class="desc-text">Some of my features needed in programming job</h4>
@@ -417,7 +425,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="cont">
             <h3 class="title-text section-title">Contact</h3>
             <h4 class="desc-text">Get in touch!</h4>
@@ -501,6 +509,7 @@
     <script src="./js/formValidate.js"></script>
     <script src="./js/skillsChangeContent.js"></script>
     <script src="./js/buttonsAnimation.js"></script>
+    <script src="./js/modalHandler.js"></script>
 </body>
 
 </html>

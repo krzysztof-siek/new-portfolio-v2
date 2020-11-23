@@ -452,6 +452,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body.blocked {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .cont {
   max-width: 1200px;
   width: 100%;
@@ -1495,5 +1501,56 @@ footer .socials {
   top: -30px;
   right: -30px;
   color: #fff;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.modal-background.hide {
+  display: none;
+}
+
+.modal-background .modal-content {
+  background-color: #fdc66a;
+  margin: 20px 30px;
+  padding: 20px;
+  max-width: 500px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-top-right-radius: 50px;
+}
+
+.modal-background .modal-content .modal-text {
+  font-family: "Gotham", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  margin: 20px;
+}
+
+.modal-background .modal-content .fa-times-circle {
+  position: absolute;
+  top: -22px;
+  right: -20px;
+  z-index: 1001;
+  color: #fdc66a;
+  font-size: 36px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

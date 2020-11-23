@@ -18,3 +18,11 @@ html {
     // font-family: 'Gotham', sans-serif;
     scroll-behavior: smooth;
 }
+
+body {
+    &.blocked {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
