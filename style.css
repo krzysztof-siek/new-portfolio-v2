@@ -796,6 +796,26 @@ header nav .nav-button.open .btn-line:nth-child(3) {
   width: 12px;
 }
 
+header .page-up {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  color: #fdc66a;
+  background-color: #111111;
+  width: 30px;
+  padding: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 5px;
+  border: 3px solid #fdc66a;
+  transform: translateX(100%);
+  transition: .5s;
+}
+
+header .page-up.show {
+  transform: translateX(10%);
+  z-index: 1000;
+}
+
 .welcome {
   background-color: #0c0c0c;
 }
