@@ -1066,6 +1066,7 @@ header .page-up.show {
 
 .interests .section .flex .single {
   margin: 30px;
+  transition: .3s;
 }
 
 @media (min-width: 992px) {
@@ -1488,6 +1489,10 @@ footer .flex {
   }
 }
 
+footer .flex .desc-text {
+  margin-left: 0;
+}
+
 footer .socials {
   width: 160px;
   margin-bottom: 30px;
@@ -1508,21 +1513,32 @@ footer .socials {
 }
 
 .features .single {
-  width: 120px;
-  height: 120px;
   position: relative;
   margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: .1s;
 }
 
-.features .single img {
+.features .single:hover {
+  transform: translateY(-2px);
+  box-shadow: -5px 5px 10px 0px rgba(255, 255, 255, 0.75);
+}
+
+.features .single .single-img {
+  height: 120px;
+  width: 120px;
+}
+
+.features .single .single-img img {
   width: 100%;
 }
 
 .features .single .single-desc {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 20px;
 }
 
 .skills {

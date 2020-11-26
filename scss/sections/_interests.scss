@@ -9,9 +9,11 @@
 			flex-wrap: wrap;
 			.single {
 				margin: 30px;
+				transition: .3s;
 				@include medium {
 					margin: 20px 0;
 				}
+				
 				.single-desc {
 					color: $mainDark;
 					font-weight: 700;
