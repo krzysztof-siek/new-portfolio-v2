@@ -1424,6 +1424,7 @@ header .page-up.show {
   text-align: left;
   line-height: 26px;
   min-height: 52px;
+  margin-left: 0;
 }
 
 .projects .swiper-container .swiper-slide .view-project {
