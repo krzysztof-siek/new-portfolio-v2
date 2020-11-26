@@ -15,6 +15,21 @@
 		border: 2px solid $yellow;
 		border-radius: 50%;
 		overflow: hidden;
+		.img-desktop {
+			display: none;
+
+			@include medium {
+				display: block;
+			}
+		}
+
+		.img-mobile {
+			display: block;
+			
+			@include medium {
+				display: none;
+			}
+		}
 		img {
 			width: 100%;
 		}

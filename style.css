@@ -616,7 +616,7 @@ body.blocked {
   font-weight: 400;
   color: #fff;
   text-align: center;
-  margin: 0 5px;
+  margin: 0 15px;
 }
 
 .center-text {
@@ -1106,6 +1106,26 @@ header .page-up.show {
   overflow: hidden;
 }
 
+.contact .photo .img-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .contact .photo .img-desktop {
+    display: block;
+  }
+}
+
+.contact .photo .img-mobile {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .contact .photo .img-mobile {
+    display: none;
+  }
+}
+
 .contact .photo img {
   width: 100%;
 }
@@ -1517,8 +1537,14 @@ footer .socials {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   max-width: 600px;
+}
+
+@media (min-width: 992px) {
+  .skills .skils-container {
+    justify-content: flex-start;
+  }
 }
 
 .skills .skils-container .single-icon {
