@@ -697,7 +697,18 @@ header nav .nav-links {
 }
 
 header nav .nav-links.open {
-  top: 100px;
+  position: fixed;
+  top: 0;
+  padding-top: 100px;
+}
+
+@media (min-width: 992px) {
+  header nav .nav-links.open {
+    padding-top: 0;
+    top: 100px;
+    position: static;
+    z-index: 10;
+  }
 }
 
 @media (min-width: 992px) {
