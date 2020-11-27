@@ -68,10 +68,9 @@ contactForm.addEventListener('submit', function(e) {
 		nameVal = name.value;
 		emailVal = email.value;
 		messageVal = message.value;
-		// To odkomentować żeby działało 
-		// contactForm.submit(function (e) {
-		//     e.preventDefault();
-		// });
+		contactForm.submit(function (e) {
+		    e.preventDefault();
+		});
 		const formSent = document.querySelector('.form-sent')
 		 formSent.classList.add('show')
          const hideSentForm = () => {
